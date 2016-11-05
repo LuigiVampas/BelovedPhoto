@@ -2,7 +2,7 @@
 
 class Authentication {
 	public static function login($__code){
-		$user_info_arr = InstagramApi::getUserIndo($__code);
+		$user_info_arr = InstagramApi::getUserInfo($__code);
 		
 		file_put_contents('user_info.txt', $user_info_arr);
 	}
